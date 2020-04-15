@@ -17,3 +17,16 @@
 .container-fluid {
   padding: 1rem;
 }
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* form */
+.create-doc .form-group > label {
+  font-weight: bold;
+}
+/* form end*/
