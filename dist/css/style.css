@@ -30,3 +30,9 @@
   font-weight: bold;
 }
 /* form end*/
+
+/* DataTable */
+#example_length {
+  position: absolute;
+  padding-top: 7px;
+}
