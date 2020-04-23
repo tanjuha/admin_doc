@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Головна - АТ «Чернівціобленерго»</title>
+  <title>Накази</title>
 
   <!-- my styles -->
   <link rel="stylesheet" href="./dist/css/navbar.css">
@@ -122,105 +122,85 @@
       </nav>
       <div class="container-fluid">
         <div class="content-header">
-          <h1>Головна</h1>
+          <h1>Накази</h1>
+          <a class="btn btn-success" href="./create.html">
+            <i class="fas fa-plus"></i>
+            Добавити наказ
+          </a>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="card small-box border-left-primary shadow ">
-              <div class="card-body">
-                <div>
-                  <h2 class="card-title">Накази</h2>
-                  <a class="card-count" href="document.html">
-                    6
-                  </a>
-                </div>
-                <a class="btn btn-success" href="./create.html" title="Добавити наказ">
-                  <i class="fas fa-plus"></i>
-                </a>
-              </div>
-              <a href="document.html" class="btn btn-primary">
-                Більше інформації 
-                <i class="fas fa-chevron-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card small-box border-left-primary shadow ">
-              <div class="card-body">
-                <div>
-                  <h2 class="card-title">Розпорядження</h2>
-                  <a class="card-count" href="document.html">
-                    0
-                  </a>
-                </div>
-                <a class="btn btn-success" href="./create.html" title="Добавити розпорядження">
-                  <i class="fas fa-plus"></i>
-                </a>
-              </div>
-              <a href="document.html" class="btn btn-primary">
-                Більше інформації 
-                <i class="fas fa-chevron-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card small-box border-left-primary shadow ">
-              <div class="card-body">
-                <div>
-                  <h2 class="card-title">Заяви</h2>
-                  <a class="card-count" href="document.html">
-                    0
-                  </a>
-                </div>
-                <a class="btn btn-success" href="./create.html" title="Добавити заяву">
-                  <i class="fas fa-plus"></i>
-                </a>
-              </div>
-              <a href="document.html" class="btn btn-primary">
-                Більше інформації 
-                <i class="fas fa-chevron-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card small-box border-left-primary shadow ">
-              <div class="card-body">
-                <div>
-                  <h2 class="card-title">Листи</h2>
-                  <a class="card-count" href="document.html">
-                    0
-                  </a>
-                </div>
-                <a class="btn btn-success" href="./create.html" title="Добавити лист">
-                  <i class="fas fa-plus"></i>
-                </a>
-              </div>
-              <a href="document.html" class="btn btn-primary">
-                Більше інформації 
-                <i class="fas fa-chevron-circle-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card small-box border-left-primary shadow ">
-              <div class="card-body">
-                <div>
-                  <h2 class="card-title">Інше</h2>
-                  <a class="card-count" href="document.html">
-                    0
-                  </a>
-                </div>
-                <a class="btn btn-success" href="./create.html" title="Добавити інше">
-                  <i class="fas fa-plus"></i>
-                </a>
-              </div>
-              <a href="document.html" class="btn btn-primary">
-                Більше інформації 
-                <i class="fas fa-chevron-circle-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        <table id="example" class="table table-striped table-bordered" style="width:100%">
+          <thead>
+              <tr>
+                  <th>Заголовок документа</th>
+                  <th>Ідентифікатор</th>
+                  <th>Вхідний номер</th>
+                  <th>Дата створення</th>
+                  <th>Статус документа</th>
+                  <th>Виконавець</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>1</td>
+              <td>0-00-00</td>
+              <td>02-03-2020</td>
+              <td>підписаний</td>
+              <td>Коваленко Т.О</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>2</td>
+              <td>0-00-00</td>
+              <td>20-03-2020</td>
+              <td>підписаний</td>
+              <td>Коваленко Т.О</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>12</td>
+              <td>0-00-00</td>
+              <td>12-03-2020</td>
+              <td>підписаний</td>
+              <td>Коваленко Т.О</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>122</td>
+              <td>0-00-00</td>
+              <td>28-03-2020</td>
+              <td>підписаний</td>
+              <td>Коваленко Т.О</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>1002</td>
+              <td>0-00-00</td>
+              <td>10-03-2020</td>
+              <td>підписаний</td>
+              <td>Коваленко Т.О</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>12000</td>
+              <td>0-00-00</td>
+              <td>26-03-2019</td>
+              <td>підписаний</td>
+              <td>Коваленко Т.О</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Заголовок документа</th>
+              <th>Ідентифікатор</th>
+              <th>Вхідний номер</th>
+              <th>Дата створення</th>
+              <th>Статус документа</th>
+              <th>Виконавець</th>
+          </tr>
+          </tfoot>
+        </table>
+        
       </div>
     </div>
   </div>

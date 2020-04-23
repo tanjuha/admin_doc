@@ -25,6 +25,27 @@
   margin-bottom: 1rem;
 }
 
+/* card */
+.card.small-box {
+  margin-bottom: 1.5rem;
+}
+
+.card.small-box .card-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card.small-box .card-title {
+  margin-bottom: 0.2rem;
+}
+
+.card.small-box .card-count {
+  font-weight: bold;
+}
+/* card end*/
+
+
 /* form */
 .create-doc .form-group > label {
   font-weight: bold;
