@@ -47,13 +47,22 @@ class Router {
     // echo $this->params['controller'];
     // echo $this->params['action'];
     // connect controller
-    $controller = 'application\controllers\\'. ucfirst($this->params['controller']). 'Controller.php';
+    $path = 'application\controllers\\'. ucfirst($this->params['controller']). 'Controller';
     // echo $controller;
 
-    if(class_exists($controller)) {
-      echo 'ok';
+    if(class_exists($path)) {
+      $action = $this->params['action']. 'Action';
+
+      // check if exist method
+      if(method_exists($path, $action)) {
+        $controller = new $path($this->params);
+        $controller->$action();
+      } else {
+        echo "Action " .$action. " not found :(";
+      }
+
     } else {
-      echo 'Class '.$controller.' not found :(';
+      echo 'Controller '.$path.' not found :(';
 
     }
   } else {
